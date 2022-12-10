@@ -6,9 +6,9 @@ public class ReportCard {
         char grade;
         if (testResult >= 90) {
             grade = 'A';
-        } else if(testResult >=80 && testResult < 90) {
+        } else if(testResult >=80) {
             grade = 'B';
-        } else if (testResult >=70 && testResult < 80) {
+        } else if (testResult >=70) {
             grade = 'C';
         } else {
             grade = 'D';
@@ -18,7 +18,7 @@ public class ReportCard {
 
     public static void main(String[] args) {
 
-        char yourGrade = ReportCard.convertGrades(93);
+        char yourGrade = ReportCard.convertGrades(75);
         System.out.println("Your result is - " + yourGrade);
     }
 }
